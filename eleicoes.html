@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eleições 2022</title>
 
-    <link rel="stylesheet" href="./eleicoes.css">
+    <link rel="stylesheet" href="./eleicoes.css" />
     <script defer type="text/javascript" src="./eleicoes.js"></script>
-</head>
-<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <h1>Apuração das Eleições 2022</h1>
-        <span id="update"></span>
-    
-        <section id="results">
-            <div id="president">
-                <span>Fonte: TSE</span>
-            </div>
-    
-            <div id="governor">
-                <select>
-                    <option value="ac">AC</option>
-                    <option value="al">AL</option>
-                    <option value="am">AM</option>
-                    <option value="ba">BA</option>
-                    <option value="ce">CE</option>
-                    <option value="df">DF</option>
-                    <option value="es">ES</option>
-                    <option value="go">GO</option>
-                    <option value="ma">MA</option>
-                    <option value="mt">MT</option>
-                    <option value="ms">MS</option>
-                    <option value="mg">MG</option>
-                    <option value="pa">PA</option>
-                    <option value="pb">PB</option>
-                    <option value="pr">PR</option>
-                    <option value="pe">PE</option>
-                    <option value="pi">PI</option>
-                    <option value="rj">RJ</option>
-                    <option value="rn">RN</option>
-                    <option value="rs">RS</option>
-                    <option value="ro">RO</option>
-                    <option value="rr">RR</option>
-                    <option value="sc">SC</option>
-                    <option value="sp" selected>SP</option>
-                    <option value="se">SE</option>
-                    <option value="to">TO</option>                                          
-                </select>
-            </div>
-        </section>
-    
-        <section id="more-results">
-            <div class="simple-list" id="state-deputy">
-                <h2>Deputados Estaduais <span data-location>SP</span></h2>
-            </div>
-    
-            <div class="simple-list" id="congressman">
-                <h2>Deputados Federais <span data-location>SP</span></h2>
-            </div>
-    
-            <div class="simple-list" id="senator">
-                <h2>Senadores <span data-location>SP</span></h2>
-            </div>
-        </section>
+      <h1>Apuração das Eleições 2022</h1>
+      <span id="update"></span>
+
+      <section id="results">
+        <div id="president">
+          <span>Fonte: TSE</span>
+        </div>
+
+        <div id="governor">
+          <select>
+            <option value="ac">AC</option>
+            <option value="al">AL</option>
+            <option value="am">AM</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="df">DF</option>
+            <option value="es">ES</option>
+            <option value="go">GO</option>
+            <option value="ma">MA</option>
+            <option value="mt">MT</option>
+            <option value="ms">MS</option>
+            <option value="mg">MG</option>
+            <option value="pa">PA</option>
+            <option value="pb">PB</option>
+            <option value="pr">PR</option>
+            <option value="pe">PE</option>
+            <option value="pi">PI</option>
+            <option value="rj">RJ</option>
+            <option value="rn">RN</option>
+            <option value="rs">RS</option>
+            <option value="ro">RO</option>
+            <option value="rr">RR</option>
+            <option value="sc">SC</option>
+            <option value="sp" selected>SP</option>
+            <option value="se">SE</option>
+            <option value="to">TO</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="more-results">
+        <div class="simple-list" id="state-deputy">
+          <h2>Deputados Estaduais <span data-location>SP</span></h2>
+        </div>
+
+        <div class="simple-list" id="congressman">
+          <h2>Deputados Federais <span data-location>SP</span></h2>
+        </div>
+
+        <div class="simple-list" id="senator">
+          <h2>Senadores <span data-location>SP</span></h2>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
