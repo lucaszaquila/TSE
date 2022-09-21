@@ -1,0 +1,938 @@
+{
+  "ele": "9238",
+  "cdabr": "SP",
+  "nmabr": "SÃO PAULO",
+  "t": "1",
+  "f": "S",
+  "s": "N",
+  "dg": "21/09/2022",
+  "hg": "09:53:54",
+  "v": "005",
+  "br": {
+    "nm": "Brasil",
+    "uf": [
+      {
+        "sg": "SP",
+        "nm": "SÃO PAULO",
+        "s": "101826",
+        "e": "34756814",
+        "tmun": "645"
+      }
+    ]
+  },
+  "carg": {
+    "cd": "5",
+    "nmn": "Senador",
+    "nmm": "Senador",
+    "nmf": "Senadora",
+    "nv": "1",
+    "fed": [
+      {
+        "n": "1",
+        "nm": "Unidos 14 e 15",
+        "sg": "14 - P14, 15 - P15",
+        "com": "14 - P14, 15 - P15",
+        "npar": [
+          "14",
+          "15"
+        ]
+      }
+    ],
+    "agr": [
+      {
+        "n": "250001667345",
+        "nm": "Unidos 14 e 15",
+        "tp": "F",
+        "com": "P10105 / P10106",
+        "par": [
+          {
+            "n": "15",
+            "sg": "P10106",
+            "nm": "PARTIDO: 10106",
+            "nfed": "1",
+            "cand": [
+              {
+                "n": "150",
+                "sqcand": "250005742355",
+                "nm": "CANDIDATO: 42067",
+                "nmu": "CANDIDATO: 42067",
+                "s": "M",
+                "dt": "08/04/1950",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742356",
+                    "nm": "CANDIDATO: 42068",
+                    "nmu": "CANDIDATO: 42068",
+                    "sgp": "P10106"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742357",
+                    "nm": "CANDIDATO: 42069",
+                    "nmu": "CANDIDATO: 42069",
+                    "sgp": "P10106"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "n": "14",
+            "sg": "P10105",
+            "nm": "PARTIDO: 10105",
+            "nfed": "1",
+            "cand": [
+              {
+                "n": "140",
+                "sqcand": "250005742149",
+                "nm": "CANDIDATO: 41861",
+                "nmu": "CANDIDATO: 41861",
+                "s": "M",
+                "dt": "05/11/1990",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742150",
+                    "nm": "CANDIDATO: 41862",
+                    "nmu": "CANDIDATO: 41862",
+                    "sgp": "P10105"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742151",
+                    "nm": "CANDIDATO: 41863",
+                    "nmu": "CANDIDATO: 41863",
+                    "sgp": "P10105"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667527",
+        "nm": "PARTIDO: 10119",
+        "tp": "I",
+        "com": "P10119",
+        "par": [
+          {
+            "n": "28",
+            "sg": "P10119",
+            "nm": "PARTIDO: 10119",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "280",
+                "sqcand": "250005742419",
+                "nm": "CANDIDATO: 42091",
+                "nmu": "CANDIDATO: 42091",
+                "s": "M",
+                "dt": "01/10/1954",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742420",
+                    "nm": "CANDIDATO: 42092",
+                    "nmu": "CANDIDATO: 42092",
+                    "sgp": "P10119"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742421",
+                    "nm": "CANDIDATO: 42093",
+                    "nmu": "CANDIDATO: 42093",
+                    "sgp": "P10119"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667504",
+        "nm": "PARTIDO: 10102",
+        "tp": "I",
+        "com": "P10102",
+        "par": [
+          {
+            "n": "11",
+            "sg": "P10102",
+            "nm": "PARTIDO: 10102",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "110",
+                "sqcand": "250005742242",
+                "nm": "CANDIDATO: 41954",
+                "nmu": "CANDIDATO: 41954",
+                "s": "M",
+                "dt": "17/03/1987",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742243",
+                    "nm": "CANDIDATO: 41955",
+                    "nmu": "CANDIDATO: 41955",
+                    "sgp": "P10102"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742244",
+                    "nm": "CANDIDATO: 41956",
+                    "nmu": "CANDIDATO: 41956",
+                    "sgp": "P10102"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667344",
+        "nm": "PARTIDO: 10103",
+        "tp": "I",
+        "com": "P10103",
+        "par": [
+          {
+            "n": "12",
+            "sg": "P10103",
+            "nm": "PARTIDO: 10103",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "120",
+                "sqcand": "250005742352",
+                "nm": "CANDIDATO: 42064",
+                "nmu": "CANDIDATO: 42064",
+                "s": "M",
+                "dt": "28/05/1959",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742353",
+                    "nm": "CANDIDATO: 42065",
+                    "nmu": "CANDIDATO: 42065",
+                    "sgp": "P10103"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742354",
+                    "nm": "CANDIDATO: 42066",
+                    "nmu": "CANDIDATO: 42066",
+                    "sgp": "P10103"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667522",
+        "nm": "PARTIDO: 10114",
+        "tp": "I",
+        "com": "P10114",
+        "par": [
+          {
+            "n": "23",
+            "sg": "P10114",
+            "nm": "PARTIDO: 10114",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "230",
+                "sqcand": "250005741944",
+                "nm": "CANDIDATO: 41656",
+                "nmu": "CANDIDATO: 41656",
+                "s": "M",
+                "dt": "25/07/1952",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741946",
+                    "nm": "CANDIDATO: 41658",
+                    "nmu": "CANDIDATO: 41658",
+                    "sgp": "P10114"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741945",
+                    "nm": "CANDIDATO: 41657",
+                    "nmu": "CANDIDATO: 41657",
+                    "sgp": "P10114"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667523",
+        "nm": "PARTIDO: 10115",
+        "tp": "I",
+        "com": "P10115",
+        "par": [
+          {
+            "n": "24",
+            "sg": "P10115",
+            "nm": "PARTIDO: 10115",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "240",
+                "sqcand": "250005741947",
+                "nm": "CANDIDATO: 41659",
+                "nmu": "CANDIDATO: 41659",
+                "s": "M",
+                "dt": "02/07/1957",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741949",
+                    "nm": "CANDIDATO: 41661",
+                    "nmu": "CANDIDATO: 41661",
+                    "sgp": "P10115"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741948",
+                    "nm": "CANDIDATO: 41660",
+                    "nmu": "CANDIDATO: 41660",
+                    "sgp": "P10115"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667528",
+        "nm": "PARTIDO: 10120",
+        "tp": "I",
+        "com": "P10120",
+        "par": [
+          {
+            "n": "29",
+            "sg": "P10120",
+            "nm": "PARTIDO: 10120",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "290",
+                "sqcand": "250005742422",
+                "nm": "CANDIDATO: 42094",
+                "nmu": "CANDIDATO: 42094",
+                "s": "M",
+                "dt": "28/06/1959",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742424",
+                    "nm": "CANDIDATO: 42096",
+                    "nmu": "CANDIDATO: 42096",
+                    "sgp": "P10120"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742423",
+                    "nm": "CANDIDATO: 42095",
+                    "nmu": "CANDIDATO: 42095",
+                    "sgp": "P10120"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667346",
+        "nm": "PARTIDO: 10121",
+        "tp": "I",
+        "com": "P10121",
+        "par": [
+          {
+            "n": "30",
+            "sg": "P10121",
+            "nm": "PARTIDO: 10121",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "300",
+                "sqcand": "250005742358",
+                "nm": "CANDIDATO: 42070",
+                "nmu": "CANDIDATO: 42070",
+                "s": "M",
+                "dt": "08/10/1953",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742359",
+                    "nm": "CANDIDATO: 42071",
+                    "nmu": "CANDIDATO: 42071",
+                    "sgp": "P10121"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742360",
+                    "nm": "CANDIDATO: 42072",
+                    "nmu": "CANDIDATO: 42072",
+                    "sgp": "P10121"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667526",
+        "nm": "PARTIDO: 10118",
+        "tp": "I",
+        "com": "P10118",
+        "par": [
+          {
+            "n": "27",
+            "sg": "P10118",
+            "nm": "PARTIDO: 10118",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "270",
+                "sqcand": "250005742416",
+                "nm": "CANDIDATO: 42088",
+                "nmu": "CANDIDATO: 42088",
+                "s": "M",
+                "dt": "16/10/1948",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742417",
+                    "nm": "CANDIDATO: 42089",
+                    "nmu": "CANDIDATO: 42089",
+                    "sgp": "P10118"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742418",
+                    "nm": "CANDIDATO: 42090",
+                    "nmu": "CANDIDATO: 42090",
+                    "sgp": "P10118"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667347",
+        "nm": "PARTIDO: 10122",
+        "tp": "I",
+        "com": "P10122",
+        "par": [
+          {
+            "n": "32",
+            "sg": "P10122",
+            "nm": "PARTIDO: 10122",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "320",
+                "sqcand": "250005742361",
+                "nm": "CANDIDATO: 42073",
+                "nmu": "CANDIDATO: 42073",
+                "s": "M",
+                "dt": "11/10/1953",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742363",
+                    "nm": "CANDIDATO: 42075",
+                    "nmu": "CANDIDATO: 42075",
+                    "sgp": "P10122"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742362",
+                    "nm": "CANDIDATO: 42074",
+                    "nmu": "CANDIDATO: 42074",
+                    "sgp": "P10122"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667533",
+        "nm": "PARTIDO: 10101",
+        "tp": "I",
+        "com": "P10101",
+        "par": [
+          {
+            "n": "10",
+            "sg": "P10101",
+            "nm": "PARTIDO: 10101",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "100",
+                "sqcand": "250005742146",
+                "nm": "CANDIDATO: 41858",
+                "nmu": "CANDIDATO: 41858",
+                "s": "M",
+                "dt": "07/01/1984",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742147",
+                    "nm": "CANDIDATO: 41859",
+                    "nmu": "CANDIDATO: 41859",
+                    "sgp": "P10101"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742148",
+                    "nm": "CANDIDATO: 41860",
+                    "nmu": "CANDIDATO: 41860",
+                    "sgp": "P10101"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667535",
+        "nm": "PARTIDO: 10107",
+        "tp": "I",
+        "com": "P10107",
+        "par": [
+          {
+            "n": "16",
+            "sg": "P10107",
+            "nm": "PARTIDO: 10107",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "160",
+                "sqcand": "250005742152",
+                "nm": "CANDIDATO: 41864",
+                "nmu": "CANDIDATO: 41864",
+                "s": "M",
+                "dt": "20/07/1992",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742374",
+                    "nm": "CANDIDATO: 42076",
+                    "nmu": "CANDIDATO: 42076",
+                    "sgp": "P10107"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742153",
+                    "nm": "CANDIDATO: 41865",
+                    "nmu": "CANDIDATO: 41865",
+                    "sgp": "P10107"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667536",
+        "nm": "PARTIDO: 10110",
+        "tp": "I",
+        "com": "P10110",
+        "par": [
+          {
+            "n": "19",
+            "sg": "P10110",
+            "nm": "PARTIDO: 10110",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "190",
+                "sqcand": "250005742375",
+                "nm": "CANDIDATO: 42077",
+                "nmu": "CANDIDATO: 42077",
+                "s": "M",
+                "dt": "24/08/1961",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742377",
+                    "nm": "CANDIDATO: 42079",
+                    "nmu": "CANDIDATO: 42079",
+                    "sgp": "P10110"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742376",
+                    "nm": "CANDIDATO: 42078",
+                    "nmu": "CANDIDATO: 42078",
+                    "sgp": "P10110"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667506",
+        "nm": "PARTIDO: 10108",
+        "tp": "I",
+        "com": "P10108",
+        "par": [
+          {
+            "n": "17",
+            "sg": "P10108",
+            "nm": "PARTIDO: 10108",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "170",
+                "sqcand": "250005742248",
+                "nm": "CANDIDATO: 41960",
+                "nmu": "CANDIDATO: 41960",
+                "s": "M",
+                "dt": "23/02/1943",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742250",
+                    "nm": "CANDIDATO: 41962",
+                    "nmu": "CANDIDATO: 41962",
+                    "sgp": "P10108"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742249",
+                    "nm": "CANDIDATO: 41961",
+                    "nmu": "CANDIDATO: 41961",
+                    "sgp": "P10108"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667537",
+        "nm": "PARTIDO: 10111",
+        "tp": "I",
+        "com": "P10111",
+        "par": [
+          {
+            "n": "20",
+            "sg": "P10111",
+            "nm": "PARTIDO: 10111",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "200",
+                "sqcand": "250005742378",
+                "nm": "CANDIDATO: 42080",
+                "nmu": "CANDIDATO: 42080",
+                "s": "M",
+                "dt": "13/02/1970",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742379",
+                    "nm": "CANDIDATO: 42081",
+                    "nmu": "CANDIDATO: 42081",
+                    "sgp": "P10111"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742380",
+                    "nm": "CANDIDATO: 42082",
+                    "nmu": "CANDIDATO: 42082",
+                    "sgp": "P10111"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667524",
+        "nm": "PARTIDO: 10116",
+        "tp": "I",
+        "com": "P10116",
+        "par": [
+          {
+            "n": "25",
+            "sg": "P10116",
+            "nm": "PARTIDO: 10116",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "250",
+                "sqcand": "250005741950",
+                "nm": "CANDIDATO: 41662",
+                "nmu": "CANDIDATO: 41662",
+                "s": "M",
+                "dt": "21/12/1961",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741952",
+                    "nm": "CANDIDATO: 41664",
+                    "nmu": "CANDIDATO: 41664",
+                    "sgp": "P10116"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741951",
+                    "nm": "CANDIDATO: 41663",
+                    "nmu": "CANDIDATO: 41663",
+                    "sgp": "P10116"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667507",
+        "nm": "PARTIDO: 10109",
+        "tp": "I",
+        "com": "P10109",
+        "par": [
+          {
+            "n": "18",
+            "sg": "P10109",
+            "nm": "PARTIDO: 10109",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "180",
+                "sqcand": "250005742251",
+                "nm": "CANDIDATO: 41963",
+                "nmu": "CANDIDATO: 41963",
+                "s": "M",
+                "dt": "26/12/1951",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742253",
+                    "nm": "CANDIDATO: 41965",
+                    "nmu": "CANDIDATO: 41965",
+                    "sgp": "P10109"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742252",
+                    "nm": "CANDIDATO: 41964",
+                    "nmu": "CANDIDATO: 41964",
+                    "sgp": "P10109"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667525",
+        "nm": "PARTIDO: 10117",
+        "tp": "I",
+        "com": "P10117",
+        "par": [
+          {
+            "n": "26",
+            "sg": "P10117",
+            "nm": "PARTIDO: 10117",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "260",
+                "sqcand": "250005741953",
+                "nm": "CANDIDATO: 41665",
+                "nmu": "CANDIDATO: 41665",
+                "s": "M",
+                "dt": "21/09/1982",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742414",
+                    "nm": "CANDIDATO: 42086",
+                    "nmu": "CANDIDATO: 42086",
+                    "sgp": "P10117"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742415",
+                    "nm": "CANDIDATO: 42087",
+                    "nmu": "CANDIDATO: 42087",
+                    "sgp": "P10117"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667505",
+        "nm": "PARTIDO: 10104",
+        "tp": "I",
+        "com": "P10104",
+        "par": [
+          {
+            "n": "13",
+            "sg": "P10104",
+            "nm": "PARTIDO: 10104",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "130",
+                "sqcand": "250005742245",
+                "nm": "CANDIDATO: 41957",
+                "nmu": "CANDIDATO: 41957",
+                "s": "M",
+                "dt": "10/02/1984",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742247",
+                    "nm": "CANDIDATO: 41959",
+                    "nmu": "CANDIDATO: 41959",
+                    "sgp": "P10104"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742246",
+                    "nm": "CANDIDATO: 41958",
+                    "nmu": "CANDIDATO: 41958",
+                    "sgp": "P10104"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667508",
+        "nm": "PARTIDO: 10112",
+        "tp": "I",
+        "com": "P10112",
+        "par": [
+          {
+            "n": "21",
+            "sg": "P10112",
+            "nm": "PARTIDO: 10112",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "210",
+                "sqcand": "250005742394",
+                "nm": "CANDIDATO: 42083",
+                "nmu": "CANDIDATO: 42083",
+                "s": "M",
+                "dt": "28/12/1977",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742395",
+                    "nm": "CANDIDATO: 42084",
+                    "nmu": "CANDIDATO: 42084",
+                    "sgp": "P10112"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005742396",
+                    "nm": "CANDIDATO: 42085",
+                    "nmu": "CANDIDATO: 42085",
+                    "sgp": "P10112"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": "250001667521",
+        "nm": "PARTIDO: 10113",
+        "tp": "I",
+        "com": "P10113",
+        "par": [
+          {
+            "n": "22",
+            "sg": "P10113",
+            "nm": "PARTIDO: 10113",
+            "nfed": "",
+            "cand": [
+              {
+                "n": "220",
+                "sqcand": "250005741941",
+                "nm": "CANDIDATO: 41653",
+                "nmu": "CANDIDATO: 41653",
+                "s": "M",
+                "dt": "16/08/2036",
+                "dvt": "Válido",
+                "vs": [
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741943",
+                    "nm": "CANDIDATO: 41655",
+                    "nmu": "CANDIDATO: 41655",
+                    "sgp": "P10113"
+                  },
+                  {
+                    "tp": "S",
+                    "sqcand": "250005741942",
+                    "nm": "CANDIDATO: 41654",
+                    "nmu": "CANDIDATO: 41654",
+                    "sgp": "P10113"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
