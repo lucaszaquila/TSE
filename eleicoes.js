@@ -150,40 +150,20 @@ function generateData({ vb, pvb, tvn, ptvn, vv, pvvc }) {
   const div2 = document.createElement("div");
   const div3 = document.createElement("div");
 
-  const data = document.createElement("div");
-  data.classList.add("data");
-
-  const blank = document.createElement("span");
-  blank.innerHTML = "Brancos";
-
-  const nullishe = document.createElement("span");
-  nullishe.innerHTML = "Nulos";
-
-  const valid = document.createElement("span");
-  valid.innerHTML = "Válidos";
-
-  const votesB = document.createElement("span");
-  votesB.innerHTML = vb;
-
-  const votesBPercent = document.createElement("span");
-  votesBPercent.innerHTML = `${pvb}%`;
-
-  const votesN = document.createElement("span");
-  votesN.innerHTML = tvn;
-
-  const votesNPercent = document.createElement("span");
-  votesNPercent.innerHTML = `${ptvn}%`;
-
-  const votesV = document.createElement("span");
-  votesV.innerHTML = vv;
-
-  const votesVPercent = document.createElement("span");
-  votesVPercent.innerHTML = `${pvvc}%`;
+  const data = createElement("div", { classList: "data" });
+  const blank = createElement("span", { innerHTML: "Brancos" });
+  const nullishe = createElement("span", { innerHTML: "Nulos" });
+  const valid = createElement("span", { innerHTML: "Válidos" });
+  const votesB = createElement("span", { innerHTML: vb });
+  const votesBPercent = createElement("span", { innerHTML: `${pvb}%` });
+  const votesN = createElement("span", { innerHTML: tvn });
+  const votesNPercent = createElement("span", { innerHTML: `${ptvn}%` });
+  const votesV = createElement("span", { innerHTML: vv });
+  const votesVPercent = createElement("span", { innerHTML: `${pvvc}%` });
 
   div1.append(blank, votesB, votesBPercent);
   div2.append(nullishe, votesN, votesNPercent);
   div3.append(valid, votesV, votesVPercent);
-
   data.append(div1, div2, div3);
 
   return data;
@@ -369,7 +349,7 @@ function getFixedContent(file, data, candidatesData) {
         mixed.push({ ...found, ...data });
       });
 
-      return [mixed, data];
+      return mixed;
     }
   };
 }
