@@ -150,7 +150,7 @@ function getMunicipalMulti($configs)
 
     foreach ($configs['codigo_eleicao']['municipal']['abrangencias'] as $municipio):
 
-//          $urlpre = "{$configs['url']}/{$configs['ambiente']}/{$configs['ciclo']}/{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}/dados/sp/sp{$municipio}-c0001-e00{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}-v.json";
+        $urlpre = "{$configs['url']}/{$configs['ambiente']}/{$configs['ciclo']}/{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}/dados/sp/sp{$municipio}-c0001-e00{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}-v.json";
         $urlgov = "{$configs['url']}/{$configs['ambiente']}/{$configs['ciclo']}/{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}/dados/sp/sp{$municipio}-c0003-e00{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}-v.json";
         $urlsen = "{$configs['url']}/{$configs['ambiente']}/{$configs['ciclo']}/{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}/dados/sp/sp{$municipio}-c0005-e00{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}-v.json";
         $urldes = "{$configs['url']}/{$configs['ambiente']}/{$configs['ciclo']}/{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}/dados/sp/sp{$municipio}-c0006-e00{$configs['codigo_eleicao'][$tipoEleicao]['codigo']}-v.json";
