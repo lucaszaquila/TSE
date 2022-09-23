@@ -6,6 +6,19 @@ const senator = document.querySelector("#senator");
 const update = document.querySelector("#update");
 const uf = document.querySelector("#governor select");
 
+function createElement(elementTag, options = {}) {
+  const element = document.createElement(elementTag);
+  Object.entries(options).forEach(function ([key, value]) {
+    if (typeof element[key] === "function" && key.slice(0, 1) !== "on") {
+      element[key](value);
+    } else {
+      element[key] = value;
+    }
+  });
+
+  return element;
+}
+
 function formatElected(elected) {
   if (elected === "2º turno") {
     return "2T";
@@ -16,53 +29,41 @@ function formatElected(elected) {
 function generateElectionProgress({ pst, e, pc, pa }, role, uf) {
   const isPresident = role === 1;
 
-  const progress = document.createElement("div");
-  progress.classList.add("election-progress");
-
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
   const div3 = document.createElement("div");
 
-  const progressLabel = document.createElement("span");
-  progressLabel.innerHTML = "Urnas apuradas";
+  const progress = createElement("div", { classList: "election-progress" });
+  const progressLabel = createElement("span", { innerHTML: "Urnas apuradas" });
+  const progressPercent = createElement("span", { innerHTML: `${pst}%` });
+  const voters = createElement("span", { innerHTML: `${e} eleitores` });
+  const votesPercent = createElement("span", { innerHTML: `${pc}% votantes` });
+  const absentPercent = createElement("span", { innerHTML: `${pa}% ausentes` });
 
-  const bar = document.createElement("div");
-  bar.classList.add("bar");
-  bar.style = `background: linear-gradient(
+  const _role = createElement("span", {
+    innerHTML: isPresident ? "Presidente " : "Governador ",
+  });
+
+  const bar = createElement("div", {
+    classList: "bar",
+    style: `background: linear-gradient(
     90deg, 
     #4eb33a 0%,  
     #4eb33a ${parseFloat(pst) * (parseFloat(pc) / 100)}%, 
     #2c6c1f ${parseFloat(pst) * (parseFloat(pc) / 100)}%, 
     #2c6c1f ${parseFloat(pst)}%, 
     transparent ${parseFloat(pst)}%, 
-    transparent 100%);`;
-
-  const _role = document.createElement("span");
-  _role.innerHTML = isPresident ? "Presidente " : "Governador ";
-
-  const progressPercent = document.createElement("span");
-  progressPercent.innerHTML = `${pst}%`;
-
-  const voters = document.createElement("span");
-  voters.innerHTML = `${e} eleitores`;
-
-  const votesPercent = document.createElement("span");
-  votesPercent.innerHTML = `${pc}% votantes`;
-
-  const absentPercent = document.createElement("span");
-  absentPercent.innerHTML = `${pa}% ausentes`;
+    transparent 100%);`,
+  });
 
   if (!isPresident) {
-    const area = document.createElement("span");
-    area.setAttribute("data-location", "");
-    area.innerHTML = uf;
+    const area = createElement("span", { "data-location": "", innerHTML: uf });
     _role.append(area);
   }
 
   div1.append(_role, progressPercent);
   div2.append(voters, progressLabel);
   div3.append(votesPercent, absentPercent);
-
   progress.append(div1, div2, bar, div3);
 
   return progress;
@@ -71,17 +72,10 @@ function generateElectionProgress({ pst, e, pc, pa }, role, uf) {
 function generateCandidate({ nm, cc, vap, pvap, e, st }) {
   cc = cc.split("-", 1);
 
-  const name = document.createElement("span");
-  name.innerHTML = nm;
-
-  const party = document.createElement("span");
-  party.innerHTML = cc;
-
-  const votes = document.createElement("span");
-  votes.innerHTML = vap;
-
-  const votesPercent = document.createElement("span");
-  votesPercent.innerHTML = `${pvap}%`;
+  const name = createElement("span", { innerHTML: nm });
+  const party = createElement("span", { innerHTML: cc });
+  const votes = createElement("span", { innerHTML: vap });
+  const votesPercent = createElement("span", { innerHTML: `${pvap}%` });
 
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
@@ -91,10 +85,10 @@ function generateCandidate({ nm, cc, vap, pvap, e, st }) {
   div2.append(votesPercent, votes);
 
   if (e === "s") {
-    const flag = document.createElement("span");
-    flag.classList.add("flag");
-    st = formatElected(st);
-    flag.innerHTML = st;
+    const flag = createElement("span", {
+      classList: "flag",
+      innerHTML: formatElected(st),
+    });
     div1.appendChild(flag);
   }
 
@@ -107,14 +101,22 @@ function generateCandidatePhoto({ sqcand, nm, cc, vap, pvap, e, st }, uf) {
   cc = cc.split("-", 1);
   const code = uf === "br" ? "9240" : "9238";
 
-  const div2 = document.createElement("div");
   const div1 = document.createElement("div");
+  const div2 = document.createElement("div");
 
-  const candidate = document.createElement("div");
-  candidate.classList.add("candidate");
+  const candidate = createElement("div", { classList: "candidate" });
+  const circle = createElement("div", { classList: "circle" });
+  const data = createElement("div", { classList: "data" });
+  const party = createElement("span", { innerHTML: cc });
+  const votesPercent = createElement("span", { innerHTML: pvap });
+  const name = createElement("span", { innerHTML: nm });
+  const votes = createElement("p", { innerHTML: vap });
+  const percent = createElement("span", { innerHTML: "%" });
+  const spanVotes = createElement("span", { innerHTML: "votos" });
 
-  const circle = document.createElement("div");
-  circle.classList.add("circle");
+  const photo = createElement("img", {
+    src: `https://resultados-sim.tse.jus.br/teste/ele2022/${code}/fotos/${uf}/${sqcand}.jpeg`,
+  });
 
   if (parseFloat(pvap) < 50) {
     circle.style = `background: linear-gradient(to right, lightgray 50%, transparent 50%),
@@ -128,35 +130,8 @@ function generateCandidatePhoto({ sqcand, nm, cc, vap, pvap, e, st }, uf) {
     }deg, #4eb33a 50%, lightgray 50%, lightgray);`;
   }
 
-  const photo = document.createElement("img");
-  photo.src = `https://resultados-sim.tse.jus.br/teste/ele2022/${code}/fotos/${uf}/${sqcand}.jpeg`;
-
-  const party = document.createElement("span");
-  party.innerHTML = cc;
-
-  const data = document.createElement("div");
-  data.classList.add("data");
-
-  const votesPercent = document.createElement("span");
-  votesPercent.innerHTML = pvap;
-
-  const percent = document.createElement("span");
-  percent.innerHTML = "%";
-
-  const votes = document.createElement("p");
-  votes.innerHTML = vap;
-
-  const spanVotes = document.createElement("span");
-  spanVotes.innerHTML = "votos";
-
-  const name = document.createElement("span");
-  name.innerHTML = nm;
-
   if (e === "s") {
-    const flag = document.createElement("span");
-    flag.classList.add("flag");
-    flag.innerHTML = st;
-
+    const flag = createElement("span", { classList: "flag", innerHTML: st });
     div1.append(flag);
   }
 
@@ -336,3 +311,110 @@ uf.addEventListener("change", function () {
 });
 
 // setInterval(generateAllContent, 60 * 1000);
+
+window.addEventListener("DOMContentLoaded", function () {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/serviceWorker.js", {
+        scope: "/",
+      })
+      .then((registration) => {
+        const sw =
+          registration.installing ||
+          registration.waiting ||
+          registration.active;
+      });
+  }
+});
+
+// --------------------------------------
+
+function getFixedContent(file, data, candidatesData) {
+  const requestFixed = new XMLHttpRequest();
+
+  requestFixed.open("GET", `/eleicoes/fixo/${file}.json`);
+  requestFixed.setRequestHeader(
+    "Cache-Control",
+    "no-cache, no-store, max-age=0"
+  );
+  requestFixed.responseType = "json";
+  requestFixed.send();
+
+  requestFixed.onreadystatechange = function () {
+    if (requestFixed.status === 200 && requestFixed.readyState === 4) {
+      const candidatesInfo = [];
+      const mixed = [];
+
+      requestFixed.response.carg.agr.forEach(function (party) {
+        const com = party.com.split(" /", 1)[0];
+
+        // Objeto com informações fixas do candidato
+        party.par.forEach(function (candidates) {
+          candidates.cand.forEach(function (candidate) {
+            candidatesInfo.push({
+              nm: candidate.nm,
+              cc: com,
+              sqcand: candidate.sqcand,
+              n: candidate.n,
+            });
+          });
+        });
+      });
+
+      // Mesclando o objeto com informações com o que tem os dados de votos
+      candidatesData.forEach(function (data) {
+        const found = candidatesInfo.find(function (info) {
+          return data.n === info.n;
+        });
+        mixed.push({ ...found, ...data });
+      });
+
+      return [mixed, data];
+    }
+  };
+}
+
+function getVariableContent(county, role) {
+  const election = role === 1 ? 9240 : 9238;
+  const requestVariable = new XMLHttpRequest();
+
+  requestVariable.open(
+    "GET",
+    `/eleicoes/${election}/${county}/sp${county}-c000${role}-e00${election}-v.json`
+  );
+  requestVariable.setRequestHeader(
+    "Cache-Control",
+    "no-cache, no-store, max-age=0"
+  );
+  requestVariable.responseType = "json";
+  requestVariable.send();
+
+  requestVariable.onreadystatechange = function () {
+    if (requestVariable.status === 200 && requestVariable.readyState === 4) {
+      const response = requestVariable.response;
+
+      // Nome do arquivo fixo ligado as informações deste
+      const file = response.nadf;
+
+      // Filtra o array de zonas para apenas o geral do municipio
+      const county = response.abr.find(function (element) {
+        return element.tpabr === "MU";
+      });
+
+      // Objeto com informações dos votos (Brancos, Nulos e Validos)
+      const data = {
+        vb: parseInt(county.vb).toLocaleString("pt-BR"),
+        pvb: county.pvb,
+        tvn: parseInt(county.tvn).toLocaleString("pt-BR"),
+        ptvn: county.ptvn,
+        vv: parseInt(county.vv).toLocaleString("pt-BR"),
+        pvvc: county.pvvc,
+      };
+
+      // Array de candidatos
+      const candidates = county.cand;
+
+      getFixedContent(file, data, candidates);
+    }
+  };
+}
