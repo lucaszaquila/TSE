@@ -1,23 +1,18 @@
-html {
-  font-family: "Roboto", sans-serif;
-}
 main {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1300px;
 }
 
 main ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 main ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #f1f1f1;
 }
 
 main ::-webkit-scrollbar-thumb {
-  background: #666;
+  background: #888;
 }
 
 main ::-webkit-scrollbar-thumb:hover {
@@ -26,11 +21,10 @@ main ::-webkit-scrollbar-thumb:hover {
 
 main .flag {
   display: inline-flex;
-  background-color: #2c6c1f;
+  background-color: green;
   font-size: 0.8rem;
   color: white;
   width: 1.2rem;
-  min-width: 1.2rem;
   height: 1.2rem;
   border-radius: 100%;
 
@@ -38,363 +32,216 @@ main .flag {
   align-items: center;
 }
 
-main .candidate .flag {
-  width: auto;
-  padding: 0.3rem 0.6rem;
-  border-radius: 5px;
+#header {
+  margin-bottom: 2rem;
 
-  position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-main > h1 {
-  font-weight: 900;
-  margin: 0;
-}
-
-main > span {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #666;
-}
-
-#results {
-  color: black;
-  max-width: unset;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-
-  display: grid;
-  align-items: start;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
   gap: 2.5rem;
 }
 
-#results::before {
-  content: "";
-  width: 100%;
-  height: 100%;
+#header h1,
+#header h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  height: 2rem;
+  margin: 0;
+}
 
-  background-image: url(../img/brasil2.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+#header h2 {
+  text-transform: uppercase;
+}
+
+#header > ::after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
   background-color: black;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-  filter: contrast(0.5) brightness(0.2) invert(1);
-}
-
-#results > div {
-  position: inherit;
-}
-
-#results > div > span,
-#results > div > select {
-  display: block;
-  height: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-#results > div > select {
-  background-color: #2c6c1f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
-#results > div > .data {
-  font-size: 0.8rem;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#results > div > .data div {
-  text-align: center;
-}
-
-#results > div > .data div > :nth-child(1) {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-right: 1rem;
-}
-
-#results > div > .data div > :nth-child(2) {
-  color: #666;
-  margin-right: 0.3rem;
-}
-
-#more-results {
-  max-width: unset;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.election-progress {
-  display: grid;
-  margin-bottom: 1rem;
-}
-
-.election-progress > div {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.election-progress > div:nth-child(1) {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.election-progress span > span {
-  font-weight: 400;
-}
-
-.election-progress > div:last-child {
-  color: #4eb33a;
-}
-
-.election-progress > div:last-child > :last-child {
-  color: #2c6c1f;
-}
-
-.election-progress .bar {
-  width: 100%;
-  height: 10px;
-  border: 1px solid white;
-}
-
-.photo-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-
-  margin-bottom: 2rem;
-}
-
-.photo-list .candidate {
-  display: flex;
-  flex-direction: column;
-}
-
-.photo-list .candidate .circle {
-  padding: 0.5rem;
-  border-radius: 100%;
-
-  background: lightgray;
-}
-
-.photo-list .candidate img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 100%;
-  border: 2px solid white;
-}
-
-.photo-list .candidate > :nth-child(1) {
   position: relative;
-  margin-bottom: 1rem;
-
-  display: flex;
-  justify-content: center;
+  left: calc(100% + 1rem);
+  top: -1.3rem;
 }
 
-.photo-list .candidate .data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#header input {
+  height: 2.5rem;
+  padding-left: 2rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  background-image: url("../img/Home/icon-search.svg");
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+
+  transition: opacity 0.5s;
 }
 
-.photo-list .candidate .data > span {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #4eb33a;
+#header input:focus {
+  opacity: 0.5;
 }
 
-.photo-list .candidate .data > span > span {
+#progress {
+  margin-bottom: 3rem;
+}
+
+#progress p {
+  margin: 0;
   font-size: 1.5rem;
 }
 
-.photo-list .candidate .data > div p {
-  margin-bottom: 0.3rem;
+#progress p > span {
+    font-size: 2rem;
 }
 
-.photo-list .candidate .data > div {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
+#progress > span {
+    margin-right: 1rem;
 }
 
-.photo-list .candidate > span {
-  font-size: 0.9rem;
-  line-height: 0.9rem;
-  font-weight: 700;
+#progress > div {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  margin: 0.5rem 0;
 }
 
-.photo-list .candidate > span + span {
-  margin-top: 0.5rem;
-  font-weight: 400;
-  font-size: 0.9rem;
+#results {
+  max-width: unset;
+  margin-bottom: 2rem;
+
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .simple-list h2 {
   font-size: 1.3rem;
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.simple-list h2 span {
-  font-weight: 400;
 }
 
 .simple-list .scroll-container {
   display: block;
   overflow-y: scroll;
-  height: 500px;
+  height: 820px;
 }
 
-.simple-list li {
-  font-size: 0.9rem;
+.simple-list .scroll-container li {
   margin-right: 1rem;
   padding-bottom: 0.5rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.simple-list li + li {
+.simple-list .scroll-container li + li {
   padding-top: 0.5rem;
   border-top: 1px solid lightgray;
 }
 
-.simple-list li > div:first-child {
+.simple-list .scroll-container li > div:first-child {
   text-transform: uppercase;
-  color: #666;
+  color: gray;
 
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.simple-list li > div :first-child {
+.simple-list .scroll-container li > div :first-child {
   max-width: 200px;
   color: black;
 }
 
-.simple-list li > div:last-child > span {
-  float: right;
+.simple-list .scroll-container li > div:last-child {
+  font-size: 0.9rem;
 }
 
-.simple-list li > div:last-child :first-child {
-  color: #4eb33a;
-  font-weight: 700;
-  margin-left: 0.5rem;
+.simple-list .scroll-container li > div:last-child :first-child {
+  color: gray;
 }
 
 .simple-list .data {
-  font-size: 0.8rem;
-  gap: 1rem;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.simple-list .data div > :nth-child(1) {
-  display: inline-block;
+.simple-list .data span:first-child {
   width: 100%;
-  text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .simple-list .data div > :nth-child(2) {
-  color: #666;
+  font-size: 0.8rem;
+  color: gray;
   margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 1180px) {
-  #results {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-list .candidate > :nth-child(1) {
-    margin-bottom: 0;
-  }
-
-  .photo-list .candidate .data {
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .photo-list .candidate > span {
-    text-align: center;
-  }
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-@media screen and (max-width: 980px) {
-  #more-results {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .simple-list .data > div {
-    text-align: center;
-  }
+.photo-list h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-@media screen and (max-width: 580px) {
-  .photo-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #results > div > .data div > :nth-child(1) {
-    display: block;
-  }
+.photo-list > div {
+  display: grid;
+  gap: 1rem;
 }
 
-@media (min-width: 1440px) {
-  html {
-    font-size: 118, 8%;
-  }
+.photo-list .candidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
+.photo-list .candidate img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid gray;
 }
 
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
+.photo-list .candidate :nth-child(2) {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.photo-list .candidate :nth-child(2) span {
+  font-size: 1rem;
+}
+
+.photo-list .candidate :nth-child(3) {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photo-list .candidate :nth-child(4),
+.photo-list .candidate :nth-child(5) {
+  font-size: 0.7rem;
+}
+
+.photo-list .candidate :nth-child(5) {
+  color: gray;
+}
+
+.photo-list button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
 }
